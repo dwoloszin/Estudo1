@@ -1,5 +1,7 @@
 flask
 flask-login
+flask-bcrypt
 email_validator
 flask-wtf
 Flask-SQLAlchemy
+
