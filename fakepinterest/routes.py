@@ -67,4 +67,5 @@ def logout():
 @login_required
 def feed():
     fotos = Foto.query.order_by(Foto.data_criacao.desc()).all()
+    #fotos = Foto.query.order_by(Foto.data_criacao.desc()).all()[:100] #limit qtd of fotos
     return render_template("feed.html", fotos=fotos)
